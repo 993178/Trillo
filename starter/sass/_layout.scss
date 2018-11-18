@@ -1,0 +1,31 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    //tijdelijk
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--grey-light-2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--grey-dark-1);
+
+    flex: 0 0 18%; // niet groeien, niet krimpen, met 18% als basisbreedte. Krimpen doet ie toch wel vanwege dat percentage
+}
+
+.hotelview {
+    background-color: #fff;
+
+    flex: 1; // Grow! Grow mo[censuur]er!
+}
