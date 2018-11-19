@@ -44,10 +44,16 @@
     background-color: var(--grey-dark-1);
 
     flex: 0 0 18%; // niet groeien, niet krimpen, met 18% als basisbreedte. Krimpen doet ie toch wel vanwege dat percentage
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotelview {
     background-color: #fff;
+    background-color: blueviolet;  // tijdelijk
+    height: 80rem;                   // tijdelijk
 
     flex: 1; // Grow! Grow mo[censuur]er!
 }
