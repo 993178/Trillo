@@ -13,6 +13,10 @@
     --grey-dark-3: #999;
 
     --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--grey-light-2);
+
 */
 
 .container {
@@ -29,7 +33,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--grey-light-2);
+    border-bottom: var(--line);
 
     display: flex;
     justify-content: space-between;
@@ -50,10 +54,29 @@
     justify-content: space-between;
 }
 
-.hotelview {
+.hotel-view {
     background-color: #fff;
-    background-color: blueviolet;  // tijdelijk
-    height: 80rem;                   // tijdelijk
 
     flex: 1; // Grow! Grow mo[censuur]er!
+}
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--grey-light-1);
+    border-bottom: var(--line);
+}
+
+.description {
+    background-color: #fff;
+    font-size: 1.4rem;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-reviews {
+    background-color: lightblue;
+    flex: 1;                            //dus hierboven voor de zustercontainer zetten we 60% en deze krijgt simpelweg de rest zonder specifiek 40% te zetten
 }
