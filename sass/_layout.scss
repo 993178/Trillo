@@ -61,6 +61,7 @@
 }
 
 .detail {
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     background-color: var(--grey-light-1);
@@ -69,7 +70,6 @@
 
 .description {
     background-color: #fff;
-    font-size: 1.4rem;
     box-shadow: var(--shadow-light);
     padding: 3rem;
     flex: 0 0 60%;
@@ -77,6 +77,11 @@
 }
 
 .user-reviews {
-    background-color: lightblue;
     flex: 1;                            //dus hierboven voor de zustercontainer zetten we 60% en deze krijgt simpelweg de rest zonder specifiek 40% te zetten
+
+    // display: flex;
+    // flex-direction: column;          // deze drie is wat Jonas als oplossing voorstelt om de knop in het midden te krijgen, maar bij mij wordt de katcontainer dan smaller dan die van Sauron
+    // align-items: center;
+
+    text-align: center;
 }
