@@ -18,6 +18,14 @@
     --line: 1px solid var(--grey-light-2);
 }
 
+//variabelen voor de media queries - daarvoor laat CSS je geen CSS-variabelen gebruiken
+$bp-xl: 75em;   // 1200px
+$bp-l: 68.75em; // 1100px
+$bp-m: 56.25em; // 900px
+$bp-s: 37.5em;  // 600px
+$bp-xs: 31.25em;   // 500px
+
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +40,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-l) {
+        font-size: 50%;
+    }
 }
 
 body {
